@@ -1,0 +1,114 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e2e2e2;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px #c4c4c4;
+}
+
+main {
+    width: 100%;
+}
+
+.stove-body {
+    background: #171717;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 3rem auto;
+    padding: 10px;
+}
+
+.burner-placeholder {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.burner {
+    background: #4b4b4b;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b1 {
+    border: solid 2px #00d9ff;
+} 
+
+.b2 {
+    border: solid 2px #00ff08;
+}
+
+.b3 {
+    border: solid 2px #7b00ff;
+}
+
+.b4 {
+    border: solid 2px #ff9900;
+}
+
+.burner-status {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.on {
+    background: #8b0707;
+}
+
+.off {
+    background: transparent;
+}
+
+.controls {
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px #fff;
+    border-radius: 20px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.control {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+
+.c1 {
+    background: #00d9ff;
+} 
+
+.c2 {
+    background: #00ff08;
+}
+
+.c3 {
+    background: #7b00ff;
+}
+
+.c4 {
+    background: #ff9900;
+}
+
+.status p {
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
