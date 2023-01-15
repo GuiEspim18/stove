@@ -109,8 +109,6 @@ function turn(value) {
 }
 
 
-
-
 /* Functions calls */
 
 populate()
