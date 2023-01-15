@@ -11,7 +11,14 @@ const burners = document.querySelectorAll("div.burner")
  * Controls list that get all controls from html
  */
 
-const controls = document.querySelectorAll("div.control")
+const controls = document.querySelectorAll("button.control")
+
+
+/** 
+ * Status list that het all text status from controls
+ */
+
+let status_elements = document.querySelectorAll("p.status")
 
 
 /** 
@@ -62,8 +69,8 @@ function populate() {
  */
 
 function addClickEvent() {
-    for (let item of burners_status) {
-        item.element.addEventListener("click", turn())
+    for (let item of controls_list) {
+        item.element.addEventListener('click', () => turn(item))
     }
 }
 
@@ -72,8 +79,33 @@ function addClickEvent() {
  * Function used to turn on or turn of a burner
  */
 
-function turn() {
-    // add burner status
+function turn(value) {
+    const control_number = Number(value.control.substring(1))
+    for (let item of burners_status) {
+        const burner_number = Number(item.burner.substring(1))
+        if (control_number === burner_number) {
+            if (item.element.classList.contains("off")) {
+                item.element.classList.remove(item.status)
+                item.status = "on"
+                item.element.classList.add(item.status)
+            } else {
+                item.element.classList.remove(item.status)
+                item.status = "off"
+                item.element.classList.add(item.status)
+            }
+        }
+    }
+    console.log(status_elements)
+    for (let item of status_elements) {
+        const status_number = Number(String(item.classList[1]).substring(1))
+        if (control_number === status_number) {
+            burners_status.forEach((element) => {
+                const burner_number =Number(element.burner.substring(1))
+                if (burner_number === status_number) item.innerText = element.status.substring(0,1).toUpperCase() + element.status.substring(1).toLowerCase()
+            })
+        }
+    }
+
 }
 
 

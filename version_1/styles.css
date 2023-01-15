@@ -61,14 +61,17 @@ main {
     width: 90%;
     height: 90%;
     border-radius: 50%;
+    transition: 0.3s;
 }
 
 .on {
     background: #8b0707;
+    transition: 0.3s;
 }
 
 .off {
-    background: transparent;
+    background: #4b4b4b;
+    transition: 0.3s;
 }
 
 .controls {
@@ -87,6 +90,8 @@ main {
     height: 3rem;
     border-radius: 50%;
     cursor: pointer;
+    border: none;
+    outline: none;
 } 
 
 .c1 {
