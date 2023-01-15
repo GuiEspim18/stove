@@ -95,7 +95,6 @@ function turn(value) {
             }
         }
     }
-    console.log(status_elements)
     for (let item of status_elements) {
         const status_number = Number(String(item.classList[1]).substring(1))
         if (control_number === status_number) {

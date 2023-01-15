@@ -18,10 +18,20 @@ main {
 .stove-body {
     background: #171717;
     width: 500px;
-    height: 500px;
+    height: 550px;
     border-radius: 20px;
     margin: 3rem auto;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stove-holder {
+    width: 98%;
+    height: 98%;
+    border: solid 1px #fff;
+    border-radius: 20px;
 }
 
 .burner-placeholder {
@@ -32,13 +42,19 @@ main {
 }
 
 .burner {
-    background: #4b4b4b;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
+}
+
+.burner-hold {
+    width: 11rem;
+    height: 11rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid 1px #fff;
+    border-radius: 50%;
 }
 
 .b1 {
@@ -61,17 +77,17 @@ main {
     width: 90%;
     height: 90%;
     border-radius: 50%;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .on {
-    background: #8b0707;
-    transition: 0.3s;
+    background: #c31919;
+    transition: 1s;
 }
 
 .off {
-    background: #4b4b4b;
-    transition: 0.3s;
+    background: #323232;
+    transition: 1s;
 }
 
 .controls {
