@@ -6,14 +6,14 @@ import { Stove } from "./models/models.js";
  * Burners list that get all burners from html
  */
 
-const burners = document.querySelectorAll("div.burner");
+const burners = document.querySelectorAll("div#burner");
 
 
 /** 
  * Controls list that get all controls from html
  */
 
-const controls = document.querySelectorAll("button.control");
+const controls = document.querySelectorAll("button#control");
 
 
 /** 
@@ -23,6 +23,13 @@ const controls = document.querySelectorAll("button.control");
 const statusText = document.querySelectorAll("p.status");
 
 
+/** 
+ * Light button get the light button to turn on the light
+ */
+
+const lightButton = document.querySelector("button.light-button")
+
+
 /* Calling stove class */
 
-new Stove(burners, controls, statusText).init();
+new Stove(burners, controls, statusText, lightButton).init();

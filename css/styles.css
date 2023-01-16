@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0 !important;
     padding: 0 !important;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,16 +16,32 @@ main {
     width: 100%;
 }
 
-.stove-body {
+.stove-cooktop {
     background: #171717;
     width: 500px;
-    height: 550px;
+    height: 500px;
     border-radius: 20px;
-    margin: 3rem auto;
+    margin: 1rem auto;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.stove-body {
+    background: #171717;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 1rem auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.status-placeholder {
+    display: flex;
 }
 
 .stove-holder {
@@ -59,7 +76,7 @@ main {
 
 .b1 {
     border: solid 2px #00d9ff;
-} 
+}
 
 .b2 {
     border: solid 2px #00ff08;
@@ -90,11 +107,26 @@ main {
     transition: 1s;
 }
 
+.brand {
+    width: 90%;
+    margin: 0 auto;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-top: solid 1px #fff;
+}
+
+.brand > p {
+    color: #fff;
+    font-style: italic;
+}
+
 .controls {
     width: 90%;
     margin: 0 auto;
     border: solid 1px #fff;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 5rem;
     display: flex;
     align-items: center;
@@ -102,17 +134,17 @@ main {
 }
 
 .control {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     cursor: pointer;
     border: none;
     outline: none;
-} 
+}
 
 .c1 {
     background: #00d9ff;
-} 
+}
 
 .c2 {
     background: #00ff08;
@@ -126,10 +158,70 @@ main {
     background: #ff9900;
 }
 
+.c5 {
+    background: #ff00a6;
+}
+
 .status p {
     font-size: 14px;
     color: #fff;
     padding: 0;
     margin: 0;
     text-align: center;
+}
+
+.oven-placeholder {
+    height: auto;
+    width: 100%;
+}
+
+.oven {
+    width: 90%;
+    height: 21rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-top: 2rem;
+}
+
+.bar {
+    width: 90%;
+    height: 1rem;
+    margin: 0 auto;
+    background-color: #dddddd;
+    border-radius: 1rem;
+}
+
+.ligth-oven-placeholder {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0.5rem;
+}
+
+.light-button {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 1.5rem;
+    border: solid 1px #e3e3e3;
+    cursor: pointer;
+}
+
+.light-on {
+    background: #d71d1d;
+    transition: 1s;
+}
+
+.light-off {
+    background: #580b0b;
+    transition: 1s;
+}
+
+.oven-light-on {
+    background: #e2ca18 !important;
+    transition: 1s;
+}
+
+svg {
+    margin-right: 0.5rem;
 }

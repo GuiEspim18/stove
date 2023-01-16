@@ -16,10 +16,11 @@ export class Stove {
     controlsList = [];
 
 
-    constructor(burners, controls, statusText) {
+    constructor(burners, controls, statusText, lightButton) {
         this.burners = burners;
         this.controls = controls;
         this.statusText = statusText;
+        this.lightButton = lightButton;
     }
 
 
@@ -31,6 +32,7 @@ export class Stove {
         this.populateBurners();
         this.populateControls();
         this.addClickEvent();
+        this.addLightClickEvent();
     }
 
 
@@ -75,6 +77,22 @@ export class Stove {
         for (let item of this.controlsList) {
             item.element.addEventListener('click', () => this.turn(item));
         }
+    }
+
+
+    /** 
+     * Method used to add light button the on click event to execute a function to turn on or turn off the light
+     */
+
+    addLightClickEvent() {
+        this.lightButton.addEventListener('click', () => {
+            const view = new Views();
+            let oven;
+            for (let item of this.burnersList) {
+                if (item.element.classList.contains('oven')) oven = item;
+            }
+            view.turnLight(this.lightButton, oven);
+        });
     }
 
 

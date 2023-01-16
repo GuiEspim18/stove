@@ -43,4 +43,33 @@ export class Views {
         }
     }
 
+
+    /** 
+     * Method used to turn on or turn off the oven light button
+     */
+
+    turnLight(value, oven) {
+        if (value.classList.contains("light-off")) {
+            value.classList.remove("light-off");
+            value.classList.add("light-on");
+        } else {
+            value.classList.remove("light-on");
+            value.classList.add("light-off")
+        }
+        this.turnOvenLight(oven)
+    }   
+
+
+    /** 
+     * Method used to turn on or turn off the light inside the oven
+     */
+
+    turnOvenLight(value) {
+        if (value.element.classList.contains("oven-light-on")) {
+            value.element.classList.remove("oven-light-on")
+        } else {
+            value.element.classList.add("oven-light-on");
+        }
+    }
+
 }
