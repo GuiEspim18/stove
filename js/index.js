@@ -1,4 +1,4 @@
-import { Stove } from "./models/models.js"
+import { Stove } from "./models/models.js";
 
 /* Variables */
 
@@ -6,23 +6,23 @@ import { Stove } from "./models/models.js"
  * Burners list that get all burners from html
  */
 
-const burners = document.querySelectorAll("div.burner")
+const burners = document.querySelectorAll("div.burner");
 
 
 /** 
  * Controls list that get all controls from html
  */
 
-const controls = document.querySelectorAll("button.control")
+const controls = document.querySelectorAll("button.control");
 
 
 /** 
  * Status list that get all text status from controls
  */
 
-const statusText = document.querySelectorAll("p.status")
+const statusText = document.querySelectorAll("p.status");
 
 
 /* Calling stove class */
 
-new Stove(burners, controls, statusText).init()
+new Stove(burners, controls, statusText).init();

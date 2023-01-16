@@ -1,8 +1,8 @@
 export class Views {
 
     constructor(burnersList, statusText) {
-        this.burnersList = burnersList
-        this.statusText = statusText
+        this.burnersList = burnersList;
+        this.statusText = statusText;
     }
 
     /** 
@@ -33,11 +33,11 @@ export class Views {
 
     turnStatus(value) {
         for (let item of this.statusText) {
-            const status_number = Number(String(item.classList[1]).substring(1))
+            const status_number = Number(String(item.classList[1]).substring(1));
             if (value === status_number) {
                 this.burnersList.forEach((element) => {
-                    const burner_number = Number(element.burner.substring(1))
-                    if (burner_number === status_number) item.innerText = element.status.substring(0, 1).toUpperCase() + element.status.substring(1).toLowerCase()
+                    const burner_number = Number(element.burner.substring(1));
+                    if (burner_number === status_number) item.innerText = element.status.substring(0, 1).toUpperCase() + element.status.substring(1).toLowerCase();
                 })
             }
         }

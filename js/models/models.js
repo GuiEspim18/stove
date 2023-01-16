@@ -73,7 +73,7 @@ export class Stove {
 
     addClickEvent() {
         for (let item of this.controlsList) {
-            item.element.addEventListener('click', () => this.turn(item))
+            item.element.addEventListener('click', () => this.turn(item));
         }
     }
 
