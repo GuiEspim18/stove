@@ -8,7 +8,7 @@ I got some references on internet in sites like slackoverflow, github, youtube t
 
 # About project 
 
-This project is about a strove that have 4 burners with a colorful border. This burners have controls and the controls have the same color as the burner border. This stove have an oven too that have an control to turn it on or off and have a light button to turn the light inside oven on or off. I had some doubts about the psr-4 folder organization but I searched on internet and based in I searched I organized the project. 
+This project is about a strove that has 4 burners with a colorful border. This burners has controls and the controls has the same color as the burner border. This stove has an oven too that has an control to turn it on or off and has a light button to turn the light inside oven on or off. I had some doubts about the psr-4 folder organization but I searched on internet and based in I searched I organized the project. 
 
 # Final considerations
 
