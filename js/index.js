@@ -27,7 +27,7 @@ const statusText = document.querySelectorAll("p.status");
  * Light button get the light button to turn on the light
  */
 
-const lightButton = document.querySelector("button.light-button")
+const lightButton = document.querySelector("button.light-button");
 
 
 /* Calling stove class */

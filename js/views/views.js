@@ -66,7 +66,7 @@ export class Views {
 
     turnOvenLight(value) {
         if (value.element.classList.contains("oven-light-on")) {
-            value.element.classList.remove("oven-light-on")
+            value.element.classList.remove("oven-light-on");
         } else {
             value.element.classList.add("oven-light-on");
         }
