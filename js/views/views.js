@@ -54,7 +54,7 @@ export class Views {
             value.classList.add("light-on");
         } else {
             value.classList.remove("light-on");
-            value.classList.add("light-off")
+            value.classList.add("light-off");
         }
         this.turnOvenLight(oven)
     }   
