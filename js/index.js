@@ -17,7 +17,7 @@ const controls = document.querySelectorAll("button.control")
 
 
 /** 
- * Status list that het all text status from controls
+ * Status list that get all text status from controls
  */
 
 const statusText = document.querySelectorAll("p.status")
