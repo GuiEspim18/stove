@@ -1,4 +1,4 @@
-import { Stove } from "./models/models.js";
+import { Stove } from "./models/stove.js";
 
 /* Variables */
 
