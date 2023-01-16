@@ -57,7 +57,7 @@ export class Views {
             value.classList.add("light-off");
         }
         this.turnOvenLight(oven)
-    }   
+    }
 
 
     /** 
